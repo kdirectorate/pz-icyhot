@@ -1,0 +1,25 @@
+module ICYHOT
+{
+     imports
+     {
+         Base
+     }
+	
+	item IcyHotTube
+	{
+		DisplayCategory				=	FirstAid,
+		Count						=	1,
+		HungerChange				=	0,
+		Weight						=	0.1,
+		Type						=	Food,
+		DisplayName					=	IcyHot Tube,
+		Icon						=	icoIcyHotTube,
+		CustomContextMenu			=	ICYHOT_Apply,
+		CantBeFrozen				=	TRUE,
+		OnEat						=	OnApply_IcyHot,
+		StaticModel					=	IcyHotTube,
+		EatType						=	ICYHOT_ApplyGoo,
+		DisappearOnUse				=	FALSE,
+	}
+
+}

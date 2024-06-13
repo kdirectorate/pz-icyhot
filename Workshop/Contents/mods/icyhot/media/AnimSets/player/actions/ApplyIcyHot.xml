@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>ICYHOT_ApplyGoo</m_Name>
+	<m_AnimName>Bob_EmotePainLeftArm</m_AnimName>
+	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_SpeedScale>1.00</m_SpeedScale>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_Looped>true</m_Looped>
+	<m_Conditions>
+		<m_Name>FoodType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_StringValue>ICYHOT_ApplyGoo</m_StringValue>
+	</m_Conditions>
+</animNode>
