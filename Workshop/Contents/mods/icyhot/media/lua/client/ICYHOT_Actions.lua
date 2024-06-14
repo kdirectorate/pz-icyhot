@@ -3,10 +3,10 @@ function OnApply_IcyHot(food, player, percent)
 
 	-- Amount of stiffness we'll take away on a body part for each
 	-- application of goo.
-	local STIFFNESS_REDUCTION = 30;
+	local STIFFNESS_REDUCTION = 60;
 	-- Amount of stiffness in a body part that we will refuse to apply
 	-- goo for.
-	local STIFFNESS_FLOOR = 35;
+	local STIFFNESS_FLOOR = 30;
 	-- How much goo we use on each body part. Currently this results
 	-- in 10 uses per tube. Which is probably enough to take away all
 	-- but STIFFNESS_FLOOR from doing max burpees 12 hours ago.
@@ -24,10 +24,8 @@ function OnApply_IcyHot(food, player, percent)
 		if (stiffness > STIFFNESS_FLOOR) and (curWeight > 0) then
 			curWeight = curWeight - GOO_USED_EACH_TIME;
 			stiffness = stiffness - STIFFNESS_REDUCTION
-			-- The STIFFNESS_FLOOR should keep this from happening, but JIC.
-			if stiffness < 1 then
-				stiffness = 0
-				player:getFitness():removeStiffnessValue(BodyPartType.ToString(bodyPart:getType()))
+			if stiffness < STIFFNESS_FLOOR then
+				stiffness = STIFFNESS_FLOOR
 			end
 			-- Set the new stiffness for this body part.
 			bodyPart:setStiffness(stiffness)
