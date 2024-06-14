@@ -3,7 +3,7 @@ function OnApply_IcyHot(food, player, percent)
 
 	-- Amount of stiffness we'll take away on a body part for each
 	-- application of goo.
-	local STIFFNESS_REDUCTION = 60;
+	local STIFFNESS_REDUCTION = 40;
 	-- Amount of stiffness in a body part that we will refuse to apply
 	-- goo for.
 	local STIFFNESS_FLOOR = 10;
