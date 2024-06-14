@@ -6,7 +6,7 @@ function OnApply_IcyHot(food, player, percent)
 	local STIFFNESS_REDUCTION = 60;
 	-- Amount of stiffness in a body part that we will refuse to apply
 	-- goo for.
-	local STIFFNESS_FLOOR = 30;
+	local STIFFNESS_FLOOR = 10;
 	-- How much goo we use on each body part. Currently this results
 	-- in 10 uses per tube. Which is probably enough to take away all
 	-- but STIFFNESS_FLOOR from doing max burpees 12 hours ago.
